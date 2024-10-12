@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-
+// Define the props type for RootLayout
+interface RootLayoutProps {
+  children: React.ReactNode; // This allows for any valid React node
+}
 
 export const metadata: Metadata = {
   title: "Resource Hub",
   description: "Resource sharing platform",
 };
-
-import { ThemeProvider } from "@/components/theme-provider";
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
@@ -22,17 +23,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
           />
         </head>
         <body>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {children}
-          </ThemeProvider>
+          {/* Render children directly without ThemeProvider */}
+          {children}
         </body>
       </html>
     </>
   );
 }
-
