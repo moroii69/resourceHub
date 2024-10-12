@@ -1,11 +1,11 @@
 "use client";
 
-import * as React from "react"; // Import React
-import { useRouter } from "next/navigation"; // Correct import for App Router
-import { useTheme } from "next-themes"; // Theme context
-import { Button } from "@/components/ui/button"; // Button component
-import { useEffect, useState } from "react"; // For managing state and effects
-import { Skeleton } from "@/components/ui/skeleton"; // Skeleton loading component
+import * as React from "react"; 
+import { useRouter } from "next/navigation"; 
+import { useTheme } from "next-themes";
+import { Button } from "@/components/ui/button"; 
+import { useEffect, useState } from "react"; 
+import { Skeleton } from "@/components/ui/skeleton"; 
 
 // Typography components
 export function TypographyH1() {
