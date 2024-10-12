@@ -6,6 +6,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import TypographyH1 from "@/components/TypographyH1"; // Import the component correctly
 import TypographyLead from "@/components/TypographyLead"; // Import the component correctly
 import ButtonDestructive from "@/components/ButtonDestructive"; // Import the component correctly
+import { Analytics } from "@vercel/analytics/react"
 
 // Main Home component
 export default function Home() {
@@ -47,6 +48,7 @@ export default function Home() {
           </div>
         </>
       )}
+      <Analytics />
     </div>
   );
 }
