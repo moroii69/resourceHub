@@ -1,9 +1,14 @@
 import { Button } from "@/components/ui/button";
 
-const ButtonDestructive = ({ label, onClick }) => (
+interface ButtonDestructiveProps {
+  label: string;        
+  onClick: () => void;
+}
+
+const ButtonDestructive: React.FC<ButtonDestructiveProps> = ({ label, onClick }) => (
   <Button variant="destructive" onClick={onClick}>
     {label}
   </Button>
 );
 
-export default ButtonDestructive; // Ensure you're using default export
+export default ButtonDestructive;
