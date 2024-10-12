@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { Skeleton } from "@/components/ui/skeleton";
 import BreadcrumbDemo from "./components/BreadcrumbDemo"; // Import BreadcrumbDemo
 import TypographyLead from "./components/TypographyLead"; // Import TypographyLead
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return <MainContent />;
