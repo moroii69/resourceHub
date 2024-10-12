@@ -8,6 +8,7 @@ import TypographyLead from "@/components/TypographyLead";
 import ButtonDestructive from "@/components/ButtonDestructive"; 
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { TypographyInlineCode } from "@/components/TypographyInlineCode"; // Import TypographyInlineCode
 
 // Main Home component
 export default function Home() {
@@ -37,6 +38,10 @@ export default function Home() {
         <>
           <TypographyH1 />
           <TypographyLead />
+          {/* Using TypographyInlineCode */}
+          <div className="mb-4">
+            <TypographyInlineCode />
+          </div>
           <div className="flex space-x-4 mt-4">
             <ButtonDestructive
               label="SEMESTER 1"

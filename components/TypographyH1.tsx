@@ -1,6 +1,6 @@
 const TypographyH1 = () => (
     <h1 className="text-5xl tracking-tight" style={{ marginBottom: '2rem' }}>
-      Welcome to ResourceHub
+      Welcome to ResourceHub!
     </h1>
   );
   
