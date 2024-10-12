@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import { Skeleton } from "@/components/ui/skeleton";
 import BreadcrumbDemo from "./components/BreadcrumbDemo"; // Import BreadcrumbDemo
 import TypographyLead from "./components/TypographyLead"; // Import TypographyLead
@@ -13,7 +12,6 @@ export default function Home() {
 }
 
 function MainContent() {
-  const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -38,7 +36,7 @@ function MainContent() {
         <>
           <TypographyLead />
           <div className="flex space-x-4 mt-4">
-
+            {/* Other content can be added here */}
           </div>
         </>
       )}
