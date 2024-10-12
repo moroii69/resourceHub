@@ -2,15 +2,8 @@
 
 import * as React from "react"; // Import React
 import { useRouter } from "next/navigation"; // Correct import for App Router
-import { Moon, Sun } from "lucide-react"; // Icons for light/dark mode toggle
 import { useTheme } from "next-themes"; // Theme context
 import { Button } from "@/components/ui/button"; // Button component
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"; // Dropdown menu components
 import { useEffect, useState } from "react"; // For managing state and effects
 import { Skeleton } from "@/components/ui/skeleton"; // Skeleton loading component
 
