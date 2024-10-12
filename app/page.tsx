@@ -3,10 +3,11 @@
 import { useRouter } from "next/navigation"; 
 import { useEffect, useState } from "react"; 
 import { Skeleton } from "@/components/ui/skeleton"; 
-import TypographyH1 from "@/components/TypographyH1"; // Import the component correctly
-import TypographyLead from "@/components/TypographyLead"; // Import the component correctly
-import ButtonDestructive from "@/components/ButtonDestructive"; // Import the component correctly
-import { Analytics } from "@vercel/analytics/react"
+import TypographyH1 from "@/components/TypographyH1";
+import TypographyLead from "@/components/TypographyLead"; 
+import ButtonDestructive from "@/components/ButtonDestructive"; 
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Main Home component
 export default function Home() {
@@ -46,6 +47,7 @@ export default function Home() {
               onClick={() => router.push("/semester2")} 
             />
           </div>
+          <SpeedInsights /> {/* Add SpeedInsights component here */}
         </>
       )}
       <Analytics />
