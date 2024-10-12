@@ -4,43 +4,12 @@ import * as React from "react";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Skeleton } from "@/components/ui/skeleton";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+import BreadcrumbDemo from "./components/BreadcrumbDemo"; // Import BreadcrumbDemo
+import TypographyLead from "./components/TypographyLead"; // Import TypographyLead
 import { Button } from "@/components/ui/button";
 
-export function TypographyLead() {
-  return (
-    <p className="text-3xl text-muted-foreground uppercase mb-4">
-      CHOOSE YOUR <strong>GROUP</strong>
-    </p>
-  );
-}
-
-export function BreadcrumbDemo() {
-  return (
-    <Breadcrumb>
-      <BreadcrumbList>
-        <BreadcrumbItem>
-          <BreadcrumbLink href="/">Home</BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbSeparator />
-        <BreadcrumbItem>
-          <BreadcrumbLink href="/semester2">Semester 2</BreadcrumbLink>
-        </BreadcrumbItem>
-      </BreadcrumbList>
-    </Breadcrumb>
-  );
-}
-
 export default function Home() {
-  return (
-    <MainContent />
-  );
+  return <MainContent />;
 }
 
 function MainContent() {
@@ -71,13 +40,13 @@ function MainContent() {
           <div className="flex space-x-4 mt-4">
             <Button
               variant="destructive"
-              onClick={() => router.push("/groupA")}
+              onClick={() => router.push("/semester2/groupA")}
             >
               GROUP A
             </Button>
             <Button
               variant="destructive"
-              onClick={() => router.push("/groupB")}
+              onClick={() => router.push("/semester2/groupB")}
             >
               GROUP B
             </Button>
