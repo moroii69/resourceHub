@@ -38,18 +38,7 @@ function MainContent() {
         <>
           <TypographyLead />
           <div className="flex space-x-4 mt-4">
-            <Button
-              variant="destructive"
-              onClick={() => router.push("/semester1/groupA")}
-            >
-              GROUP A
-            </Button>
-            <Button
-              variant="destructive"
-              onClick={() => router.push("/semester1/groupB")}
-            >
-              GROUP B
-            </Button>
+
           </div>
         </>
       )}
